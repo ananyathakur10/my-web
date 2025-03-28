@@ -1,5 +1,6 @@
 <!doctype html>
 <html> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
 
@@ -57,19 +58,12 @@ margin:20px ;
 display:inline;
 list-style:none;
 text-align:center;
-color:white;
+color:#c195c3;
 }
-# menu ul li a:visited
-   {color:white;}
-#menu ul li a:active
- {color:white;}
- #menu ul li a:link
- {color:white;}
-  a:link{
+a:link{
 color:white;}
  a:visited{
 color:white;}   
-  
 .head
 {
 //background:#dde7f6 ;
@@ -125,6 +119,114 @@ padding:20px;
 font-size:20px;
 color:#91b1bf  ;
 }
+
+
+/*            Media Query           */
+
+/* Extra small devices (phones, 600px and down)  */
+
+@media only screen and (max-width: 600px)
+ {
+
+		  body{text-align:center;
+background:pink;}
+#menu
+{
+width:100%;
+background:pink;
+text-align:center;
+margin-left:1px;
+font-size:20px;
+}
+
+#menu ul li 
+{
+display:block;
+padding:10px;
+list-style:none;
+}
+#menu ul li:hover
+{
+background:#cde5f1 ;
+transform:scale(1.20);
+
+}
+#menu ul li a:hover
+{
+color:black;
+}
+.card
+{
+
+width:60%;
+height:300px;
+ border-radius:10px;
+
+text-align:center;
+
+margin-top:1px;
+float:none;
+font-size:15px;
+background:#c195c3 ;
+padding:10px;
+margin-left:4s0px;
+}
+.pic
+{
+height:100px;
+width:30%;
+
+}
+.head
+{
+//background:#dde7f6 ;
+
+
+height:15px;
+font-size:10px;
+margin-left:1px;
+margin-top:10pz;
+color:#956cdd ;
+padding-top:10px;
+
+}
+#toph {
+text-align:center;
+font-size:20px;
+color:#956cdd ;
+}
+
+.work
+{margin-left:30px;
+width:200px;
+height:200px;
+padding:20px;
+margin-top:10px;
+}
+
+.picture
+{
+height:200px;
+width:90%;
+margin:auto;
+float:none;
+}
+#about
+{
+float:none;
+width:50%;
+font-size:15px;
+padding:10px;
+text-align:center;
+margin-left:90px;
+text-align:justify;
+margin-top:450px;
+color:#747475 ;
+}
+
+
+
+
 </style>
 
 
@@ -133,16 +235,18 @@ color:#91b1bf  ;
 
 <div id="menu">
 <ul>
-<li ><a href="indexp2.html">Home</a></li>
-<li><a href="my practices.html">Pratice Pages</a></li>
+<li > <a href="indexp2.html">Home</a></li>
+<li><a href="my practices.html">Html work </a></li>
+<li><a href="jpractice.html">Javascripts</a></li>
+
 <li><a href="https://www.behance.net/ananyathakur16 ">Graphic Work</a></li>
-<li><a href=" ">Project 1</a></li>
+
 </ul>
 </div>
 
 <div class="card">
 <H1> ANANYA</h1> 
-<img src="images/me22.jpg" >
+<img src="images/me22.jpg"class="pic" >
 <p style="color:gray;">Specialization:</style></p>
 <h3> UI/UX designer and graphic designer
 </h3>
