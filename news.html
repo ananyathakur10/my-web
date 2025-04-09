@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   #newstoday
+   {
+    background:#5f143f;
+    color:white;
+    font-size:40px;
+    padding:20px;
+    text-align:center;
+   }
+
+   body
+   {background:;}
+
+</style>
+<body>
+    <div id="newstoday">
+        News 
+    </div>
+    <script>
+
+      var n = document.getElementById("newstoday")
+      var news = ["Delhi Records Highest PM10 Levels Among 130 Cities:","Jasprit Bumrah Returns from Injury  Mumbai Indians Optimistic","Priyansh Arya's Century Leads Punjab Kings to Victory Over Chennai Super Kings","Mitchell Marsh's Stellar Performance Highlights IPL Comeback",]  
+      n.innerHTML = news[1]
+
+      var c = 0
+      function change_news ()
+      {
+        if(c<news.length-1)
+          { c++}
+
+          else
+          { c = 0}
+          n.innerHTML = news[c]
+          document.title = c 
+
+      }
+
+      setInterval ("change_news()",3000)
+      
+
+    </script>
+</body>
+</html>
