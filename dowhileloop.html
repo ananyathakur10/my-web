@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body{text-align:center;
+     background:rgb(5, 47, 84);}
+
+ .picture
+ {width:30%;
+box-shadow:10px 10px 10px gray;
+margin:20px;
+transition:0.50s;}
+
+.picture:hover
+{transform:scale(1.15)}
+
+
+</style>
+<body>
+   
+  <h1 style="color:rgb(179, 151, 57); font-family:Verdana, Geneva, Tahoma, sans-serif"> Image Loop</h1>  
+<script>
+
+  for (var i=1; i<10;i++)
+{
+    var p ="images/p"+i+".jpg"
+    document.write("<img src= "+p+" class='picture'>")
+
+}  
+</script>
+    
+</body>
+</html>
